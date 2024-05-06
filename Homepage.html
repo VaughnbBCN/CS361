@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +16,8 @@
     </div>
     <div class="content">
         <p>Here you can find out your starsign using our calculator!</p>
-        <p>Please enter your date of birth and click next.</p>
+        <p>Please enter your date of birth and click next. Once you enter your date of birth, you'll also be able to click for a personality insight about your starsign on the next page.
+        </p>
         <form id="starsignForm" action="StarsignResult.html" method="GET"></form>
             <label for="dob">Date of Birth:</label>
             <input type="date" id="dob" name="dob">
@@ -35,7 +37,6 @@
             window.location.href = "StarsignResult.html"; // Navigate to the third page
         }
         function alreadyKnowStarsign() {
-            // Add functionality here for what happens when "I already know my starsign" button is clicked
             window.location.href = "PersonalityInsight.html";
         }
     </script>
