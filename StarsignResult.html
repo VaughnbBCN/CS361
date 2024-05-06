@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Starsign</title>
+    <link rel="stylesheet" href="Style.css">
+    
+</head>
+<body>
+    <div class="header">
+        <div class="exit-button" onclick="closePage()">X</div>
+        <h1>Welcome to My Starsign!</h1>
+
+    </div>
+    <div class="content">
+        <p>Here you can find out your starsign using our calculator!</p>
+        <p>Please enter your date of birth and click next.</p>
+        <form id="starsignForm" action="StarsignResult.html" method="GET"></form>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <button onclick="navigateToResultPage()">Tell me my starsign</button>
+            <button onclick="alreadyKnowStarsign()">I already know my starsign</button>
+        </form>
+        <div class="image-box">
+            <img src="Images/Zodiac.jpg" alt="Cartoon Zodiac symbols">
+        </div>
+    </div>
+
+    <script>
+        function closePage() {
+            window.close(); // Closes the current browser tab
+        }
+        function navigateToResultPage() {
+            window.location.href = "StarsignResult.html"; // Navigate to the third page
+        }
+        function alreadyKnowStarsign() {
+            // Add functionality here for what happens when "I already know my starsign" button is clicked
+            window.location.href = "PersonalityInsight.html";
+        }
+    </script>
+</body>
+</html>

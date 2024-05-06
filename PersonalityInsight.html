@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pisces Personality Insight</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>My Starsign</h1>
+        <div>
+            <button class="back-button" onclick="goBack()">Back</button>
+            <div class="exit-button" onclick="confirmExit()">X</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Pisces</h2>
+        <p>Due to their watery nature, Pisces fall in love easily. Take care that the object of your attention deserves your affection!</p>
+        
+        <div class="emoji-text">
+            <span class="emoji-button">&#x1F44D;</span><span class="button-text">Absolutely me!!!</span> <!-- Thumbs up emoji with text -->
+            <span class="emoji-button">&#x1F44E;</span><span class="button-text">Nothing like me...</span> <!-- Thumbs down emoji with text -->
+        </div>
+        
+        <button onclick="showAnotherInsight()">Show me another personality insight</button>
+    </div>
+
+    <div class="profile-section">
+        <div class="profile-text">
+            <p>Creating a free profile will save your starsign and the insights you've seen so that you can return and see them in your history.</p>
+        </div>
+        <button class="create-profile-button">Create Profile</button>
+    </div>
+
+    <div class="image-box">
+        <img src="Images/Zodiac.jpg" alt="Cartoon Zodiac symbols">
+
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back(); // Go back to the previous page
+        }
+
+        function confirmExit() {
+            var confirmExit = confirm("Are you sure you want to exit? If you exit, you will lose your personality insight history. Would you like to create a profile to save your data?");
+            if (confirmExit) {
+                // Redirect to profile creation page or perform any other desired action
+                alert("Redirecting to profile creation page...");
+            } else {
+                // Stay on the current page or perform any other desired action
+                alert("Returning to the current page...");
+            }}
+
+        function showAnotherInsight() {
+            // You can add functionality here to show another personality insight
+            alert("Here's another personality insight!");
+        }
+    </script>
+</body>
+</html>
